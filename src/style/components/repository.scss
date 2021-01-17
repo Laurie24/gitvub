@@ -1,0 +1,46 @@
+.dashboard{
+  background: white;
+  height: 70vh;
+  width: 45rem;
+  background: linear-gradient(
+                  to right bottom,
+                  rgba(255, 255, 255, 0.3),
+                  rgba(255, 255, 255, .4)
+  );
+  border-radius: 0 1rem 1rem 0;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  overflow:scroll;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-button {
+    background: #222;
+  }
+  h3{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //height: 70vh;
+  }
+  .card {
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: white;
+    background: linear-gradient(
+                    to right bottom,
+                    rgba(255, 255, 255, 0.1),
+                    rgba(255, 255, 255, .3)
+    );
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+}

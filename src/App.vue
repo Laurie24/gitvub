@@ -1,27 +1,40 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <div class="row">
+      <div class="menu">
+        <button v-for="tab in tabs" :key="tab" @click="selected = tab;">
+          {{ tab }}
+        </button>
+      </div>
+      <Profile></Profile>
+      <component :is="selected"></component>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Profile from "./components/Profile";
+  import Repository from "./components/Repository";
+  import Info from "./components/Info";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    name: 'App',
+    data: function() {
+      return {
+        tabs: ["Info", "Repository"],
+        selected: "Info"
+      };
+    },
+    components: {
+      Profile,
+      Repository,
+      Info
+    }
+  };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+  @import "./style/app";
 </style>

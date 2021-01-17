@@ -1,0 +1,54 @@
+//****************************
+//  FONTS
+//****************************
+
+// Import google font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap');
+
+
+// Font-family variables
+$font: 'Poppins', sans-serif;
+
+// Font-weight
+$black: 900;
+$extrabold: 800;
+$bold: 700;
+$semi-bold: 600;
+$medium: 500;
+$light: 200;
+
+//****************************
+//  COLORS
+//****************************
+
+// ***  Background ***
+$bg-blue: #5390d9;
+$bg-black: #202020;
+$bg-purple: #6930c3;
+
+// *** Font ***
+$blue: #6EACDB;
+$black: #202020;
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #202020;
+  -webkit-border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $blue;
+}

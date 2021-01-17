@@ -1,0 +1,73 @@
+@import "variables";
+
+h2{
+  font-size: 1.2rem;
+}
+p{
+  margin: 0;
+}
+#app {
+  display: flex;
+  align-items: center!important;
+  font-family: $font;
+  color: $black;
+  font-weight: $semi-bold;
+  font-size: 1rem;
+  overflow-x: hidden;
+  margin: -8px !important;
+  background: linear-gradient(to right top, $bg-blue, $bg-purple);
+  height: 100vh!important;
+  .circle1,
+  .circle2 {
+    background: white;
+    background: linear-gradient(
+                    to right bottom,
+                    rgba(255, 255, 255, 0.8),
+                    rgba(255, 255, 255, 0.3)
+    );
+    height: 18rem;
+    width: 18rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle1 {
+    top: 1%;
+    right: .5%;
+  }
+
+  .circle2 {
+    bottom: 5%;
+    left: 4%;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto!important;
+    .menu{
+      background-color: white;
+      background: linear-gradient(
+                      to right bottom,
+                      rgba(255, 255, 255, 0.7),
+                      rgba(255, 255, 255, .5)
+      );
+      display: flex;
+      flex-direction: column;
+      margin-top: -25rem;
+      margin-right: 1rem;
+      border-radius: .5rem;
+      button{
+        background: transparent;
+        border: none;
+        padding: 1rem;
+        font-weight: $semi-bold!important;
+        font-size: 1rem;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
+
