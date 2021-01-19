@@ -34,7 +34,7 @@
 <script>
     import axios from "axios";
     export default {
-        name: 'Info',
+        name: 'Infos',
         data(){
             return{
                 repos: '',

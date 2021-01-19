@@ -1,6 +1,18 @@
+@import "../mixins";
 .dashboard{
+  @include desktopXS{
+    width: 35rem;
+    border-radius: 1rem;
+  }
+  @include tablette{
+    height: auto;
+    width: 95%!important;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+  }
   background: white;
-  height: 70vh;
+  height: 40rem;
   width: 45rem;
   background: linear-gradient(
                   to right bottom,
@@ -12,12 +24,6 @@
   backdrop-filter: blur(2rem);
   overflow:scroll;
   overflow-x: hidden;
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-button {
-    background: #222;
-  }
   h3{
     font-size: 1.5rem;
     text-align: center;
@@ -44,3 +50,4 @@
     }
   }
 }
+

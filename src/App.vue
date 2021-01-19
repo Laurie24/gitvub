@@ -16,21 +16,21 @@
 
 <script>
   import Profile from "./components/Profile";
-  import Repository from "./components/Repository";
-  import Info from "./components/Info";
+  import Projets from "./components/Projets";
+  import Infos from "./components/Infos";
 
   export default {
     name: 'App',
     data: function() {
       return {
-        tabs: ["Info", "Repository"],
-        selected: "Info"
+        tabs: ["Infos", "Projets"],
+        selected: "Infos"
       };
     },
     components: {
       Profile,
-      Repository,
-      Info
+      Projets,
+      Infos
     }
   };
 </script>

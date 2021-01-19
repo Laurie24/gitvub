@@ -1,10 +1,23 @@
+@import "../mixins";
+@import "../variables";
 .dashboard{
+  @include desktopXS{
+    width: 35rem;
+    border-radius: 1rem;
+  }
+  @include tablette{
+    height: auto;
+    width: 95%!important;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+  }
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background: white;
-  height: 70vh;
+  height: 40rem;
   width: 45rem;
   background: linear-gradient(
                   to right bottom,
@@ -15,6 +28,9 @@
   z-index: 2;
   backdrop-filter: blur(2rem);
   .row{
+    @include mobile{
+      flex-direction: column;
+    }
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,6 +46,10 @@
                       rgba(255, 255, 255, 0.1),
                       rgba(255, 255, 255, .3)
       );
+      a:link{
+        text-decoration: none!important;
+        color: $blue;
+      }
       h3{
         font-size: 1.5rem;
       }
@@ -48,9 +68,11 @@
         justify-content: center;
         width: 4rem;
         height: 4rem;
-        border: #202020 5px solid;
+        border: $blue 5px solid;
         border-radius: 50%;
       }
     }
   }
 }
+
+

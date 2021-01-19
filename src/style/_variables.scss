@@ -27,28 +27,9 @@ $bg-black: #202020;
 $bg-purple: #6930c3;
 
 // *** Font ***
-$blue: #6EACDB;
+$blue: #2E2F6A;
 $black: #202020;
 
 
 
-/* width */
-::-webkit-scrollbar {
-  width: 6px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #202020;
-  -webkit-border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $blue;
-}

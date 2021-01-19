@@ -16,7 +16,7 @@
 <script>
     import axios from "axios";
     export default {
-        name: 'Repository',
+        name: 'Projets',
         data(){
             return{
                 repos: '',
