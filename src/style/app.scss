@@ -26,32 +26,6 @@ a{
   overflow-x: hidden;
   margin: -8px !important;
   background: linear-gradient(to right top, $bg-blue, $bg-purple);
-  .circle1,
-  .circle2 {
-    @include tablette{
-      display: none;
-    }
-    background: white;
-    background: linear-gradient(
-                    to right bottom,
-                    rgba(255, 255, 255, 0.8),
-                    rgba(255, 255, 255, 0.3)
-    );
-    height: 18rem;
-    width: 18rem;
-    position: absolute;
-    border-radius: 50%;
-  }
-
-  .circle1 {
-    top: 1%;
-    right: .5%;
-  }
-
-  .circle2 {
-    bottom: 5%;
-    left: 4%;
-  }
   .row{
     @include tablette{
       flex-direction: column;

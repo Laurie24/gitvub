@@ -24,7 +24,7 @@
                 <p><i class="em em-round_pushpin" aria-role="presentation" aria-label="ROUND PUSHPIN"></i> {{repos.location}}</p>
                 <p><i class="em em-email" aria-role="presentation" aria-label="ENVELOPE"></i> villeneuvelaurie@orange.fr</p>
                 <p><i class="em em-iphone" aria-role="presentation" aria-label="MOBILE PHONE"></i> 06 78 44 86 78</p>
-                <p><i class="em em-earth_africa" aria-role="presentation" aria-label="EARTH GLOBE EUROPE-AFRICA"></i> <a :href="repos.blog">{{repos.blog}}</a></p>
+                <p><i class="em em-earth_africa" aria-role="presentation" aria-label="EARTH GLOBE EUROPE-AFRICA"></i> <a :href="repos.blog" target="_blank">{{repos.blog}}</a></p>
                 <p><i class="fab fa-twitter"></i> @{{repos.twitter_username}}</p>
             </div>
         </div>

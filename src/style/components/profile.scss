@@ -2,19 +2,19 @@
 @import "../app";
 @import "../mixins";
 
-.card{
-  @include desktopXS{
+.card {
+  @include desktopXS {
     height: 35rem;
-    width: 20rem!important;
+    width: 20rem !important;
     border-radius: 1rem 0 0 1rem;
   }
-  @include tablette{
+  @include tablette {
     height: 40rem;
-    width: 95%!important;
+    width: 95% !important;
     margin-top: .5rem;
   }
   background: white;
-  width: 25rem!important;
+  width: 25rem !important;
   background: linear-gradient(
                   to right bottom,
                   rgba(255, 255, 255, 0.7),
@@ -22,26 +22,29 @@
   );
   border-radius: 1rem;
   z-index: 2;
-  backdrop-filter: blur(2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 45rem;
   text-align: center;
-  .photo{
-    img{
+
+  .photo {
+    img {
       border-radius: 50%;
       width: 15rem;
     }
   }
-  .name{
-    h1{
+
+  .name {
+    h1 {
       margin-bottom: 0.1rem;
     }
   }
-  .job{
+
+  .job {
     margin-top: .5rem;
-    h2{
+
+    h2 {
       margin-bottom: 0.1rem;
     }
   }

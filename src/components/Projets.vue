@@ -5,7 +5,7 @@
             <div  v-for="repo in repos" :key="repo.id">
                 <div class="card">
                     <h4>{{repo.name}}</h4>
-                    <p>{{repo.description}}</p>
+                    <p class="description">{{repo.description}}</p>
                     <p>{{repo.language}}</p>
                 </div>
             </div>

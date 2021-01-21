@@ -1,12 +1,14 @@
 @import "../mixins";
-.dashboard{
-  @include desktopXS{
+@import "../variables";
+
+.dashboard {
+  @include desktopXS {
     width: 35rem;
     border-radius: 1rem;
   }
-  @include tablette{
+  @include tablette {
     height: auto;
-    width: 95%!important;
+    width: 95% !important;
     margin-top: .5rem;
     margin-bottom: .5rem;
     border-radius: 1rem;
@@ -22,31 +24,40 @@
   border-radius: 0 1rem 1rem 0;
   z-index: 2;
   backdrop-filter: blur(2rem);
-  overflow:scroll;
+  overflow: scroll;
   overflow-x: hidden;
-  h3{
+
+  h3 {
     font-size: 1.5rem;
     text-align: center;
   }
-  .container{
+
+  .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    //height: 70vh;
-  }
-  .card {
-    text-align: center;
-    border-radius: .5rem;
-    padding: 1rem;
-    margin: .5rem;
-    background-color: white;
-    background: linear-gradient(
-                    to right bottom,
-                    rgba(255, 255, 255, 0.1),
-                    rgba(255, 255, 255, .3)
-    );
-    h4 {
-      font-size: 1.2rem;
+
+    .card {
+      text-align: center;
+      border-radius: .5rem;
+      padding: 1rem;
+      margin: .5rem;
+      background: linear-gradient(
+                      to right bottom,
+                      rgba(255, 255, 255, 0.1),
+                      rgba(255, 255, 255, .3)
+      );
+
+      h4 {
+        font-size: 1.2rem;
+      }
+      .description{
+        font-style: italic;
+      }
+    }
+
+    :hover {
+      transform: scale(1.02);
     }
   }
 }
