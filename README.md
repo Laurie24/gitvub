@@ -7,7 +7,7 @@ Affichage des données de mon compte Github (Laurie24) grâce à l'API : https:/
 
 ### Pour essayer le projet :
 ```
-git clone https://github.com/Laurie24/infogit.git
+git clone https://github.com/Laurie24/gitvub.git
 ```
 ```
 npm install
