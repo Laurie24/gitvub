@@ -1,24 +1,20 @@
-# gitcard
+# Github + Vue = Gitvub :smile:
 
-## Project setup
+## :page_with_curl: Carte de visite Github 
+Affichage des données de mon compte Github (Laurie24) grâce à l'API : https://docs.github.com/en/rest
+
+![Screenshot](gitvub.JPG)
+
+### Pour essayer le projet :
+```
+git clone https://github.com/Laurie24/infogit.git
+```
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
